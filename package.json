@@ -1,0 +1,27 @@
+{
+  "name": "type-extensions",
+  "version": "0.0.1",
+  "description": "Library to make extensions in default types js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FelipeNascimento/type-extensions.git"
+  },
+  "keywords": [
+    "request",
+    "GET",
+    "POST",
+    "PUT",
+    "DELETE"
+  ],
+  "author": "Felipe Nascimento",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/FelipeNascimento/type-extensions/issues"
+  },
+  "homepage": "https://github.com/FelipeNascimento/type-extensions#readme",
+  "dependencies": {}
+}
