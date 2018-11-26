@@ -11,11 +11,7 @@
     "url": "git+https://github.com/FelipeNascimento/type-extensions.git"
   },
   "keywords": [
-    "request",
-    "GET",
-    "POST",
-    "PUT",
-    "DELETE"
+    
   ],
   "author": "Felipe Nascimento",
   "license": "MIT",
