@@ -50,12 +50,12 @@ Date.prototype.toUTCString = function (format) {
     .replaceAll("Z", Z);
   return str;
 };
-Date.prototype.addDays = function (days) {
-  this.setDate(this.getDate() + days);
-  return this;
-};
 Date.prototype.addYears = function (y) {
   this.setFullYear(this.getFullYear() + y);
+  return this;
+};
+Date.prototype.addDays = function (days) {
+  this.setDate(this.getDate() + days);
   return this;
 };
 Date.prototype.addHours = function (hours) {
@@ -66,6 +66,10 @@ Date.prototype.addMinutes = function (minutes) {
   this.setMinutes(this.getMinutes() + minutes);
   return this;
 };
+Date.prototype.addSeconds = function(s) {
+  this.setSeconds(this.getSeconds() + s)
+  return this
+}
 Date.prototype.addMilliseconds = function (ms) {
   this.setMilliseconds(this.getMilliseconds() + ms);
   return this;
