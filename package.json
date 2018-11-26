@@ -1,6 +1,6 @@
 {
   "name": "type-extensions",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Library to make extensions in default types js",
   "main": "index.js",
   "scripts": {
