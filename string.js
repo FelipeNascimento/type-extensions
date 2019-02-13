@@ -27,6 +27,17 @@ String.prototype.toTitleCase = function () {
         : txt
   );
 };
+String.toMD5 = function(str){
+  let crypto = require('crypto');
+  let md5 = crypto.createHash('md5')
+    .update(`${str}`)
+    .digest("hex");
+  return md5
+}
+String.prototype.toMD5 = function(){
+  return String.toMD5(this)
+}
+
 String.GUID = function () {
   return `${s4() + s4()}-${s4()}-${s4()}-${s4()}-${s4()}${s4()}${s4()}`.toLowerCase()
 }
