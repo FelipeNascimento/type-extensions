@@ -1,7 +1,13 @@
-Array.prototype.asyncForEach = async function (callback) {
-  for (let i = 0; i < this.length; i++) {
-    await callback(this[i], i, this);
-  }
+Array.prototype.asyncForEach = function (callback) {
+  return new Promise((fulfill,reject)=>{
+    let tasks = []
+    for (let i = 0; i < this.length; i++) {
+      tasks.push(callback(this[i], i, this));
+    }
+    Promise.all(tasks)
+      .then(fulfill)
+      .catch(reject)
+  })
 };
 Array.prototype.shuffle = function () {
   for (var i = this.length - 1; i > 0; i--) {
