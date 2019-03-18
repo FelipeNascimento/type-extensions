@@ -54,6 +54,10 @@ Date.prototype.addYears = function (y) {
   this.setFullYear(this.getFullYear() + y);
   return this;
 };
+Date.prototype.addMonths = function (m) {
+  this.setMonth(this.getMonth() + m);
+  return this;
+};
 Date.prototype.addDays = function (days) {
   this.setDate(this.getDate() + days);
   return this;
